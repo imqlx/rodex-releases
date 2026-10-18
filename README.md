@@ -40,7 +40,14 @@ To check by hand: **Help → Check for updates**.
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.2)
+## What's new (current version: 0.2.3)
+
+**0.2.3** · Oct 18, 2026
+- Fixed the antivirus warning (no more hidden helper processes)
+- Fixed ChatGPT 'model not supported' errors
+- Local AI works with small models
+- No more random refreshes or flicker
+- Damaged installs now say how to fix themselves
 
 **0.2.2** · Oct 18, 2026
 - Ask me questions switch in Settings: turn it off, send a prompt and walk away
