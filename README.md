@@ -40,7 +40,15 @@ To check by hand: **Help → Check for updates**.
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.7)
+## What's new (current version: 0.2.8)
+
+**0.2.8** · Oct 18, 2026
+- Studio plugin and app now verify each other with a per-install secret (reopen your place in Studio once after updating)
+- updates are checked against a full signature that expires
+- agents know much more about gameplay systems, models and animation
+- safer file and image access from the app
+- chats no longer get stuck or go blank on odd tool output
+- Ctrl+N reuses an empty chat instead of stacking new ones
 
 **0.2.7** · Oct 18, 2026
 - Damaged installs show how to fix themselves instead of crashing
@@ -61,11 +69,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Local AI works with small models
 - No more random refreshes or flicker
 - Damaged installs now say how to fix themselves
-
-**0.2.2** · Oct 18, 2026
-- Ask me questions switch in Settings: turn it off, send a prompt and walk away
-- One-click AI setup: Install, then sign-in starts by itself
-- Custom instructions start empty
-- Tidier model and AI menus
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
