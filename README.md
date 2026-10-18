@@ -40,7 +40,10 @@ To check by hand: **Help → Check for updates**.
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.3)
+## What's new (current version: 0.2.4)
+
+**0.2.4** · Oct 18, 2026
+- Local AI explains when a model is too big for your PC's memory and suggests smaller ones
 
 **0.2.3** · Oct 18, 2026
 - Fixed the antivirus warning (no more hidden helper processes)
