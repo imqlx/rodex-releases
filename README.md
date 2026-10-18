@@ -4,7 +4,7 @@
 
 <h1 align="center">Rodex</h1>
 
-<p align="center">An AI copilot for Roblox Studio. Tell it what to build, and it scripts, builds and playtests in your place.</p>
+<p align="center">The AI copilot for Roblox Studio. Describe what you want, and it scripts, models in Blender, makes shop icons and effects, and playtests in your place.</p>
 
 <p align="center">
   <a href="https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-Rodex--Setup.exe-0165fd?style=for-the-badge&logo=windows11&logoColor=white" alt="Download Rodex for Windows"></a>
@@ -13,7 +13,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/v/release/imqlx/rodex-releases?label=latest&style=flat-square&color=555" alt="Latest version">
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-555?style=flat-square" alt="Windows 10 or 11">
-  <img src="https://img.shields.io/badge/beta-friends%20%26%20testers-555?style=flat-square" alt="Beta">
+  <a href="https://rodexai.dev"><img src="https://img.shields.io/badge/website-rodexai.dev-555?style=flat-square" alt="rodexai.dev"></a>
 </p>
 
 ---
@@ -22,7 +22,9 @@
 
 1. **[Download Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe)** (about 100 MB). That's the only file you need.
 2. Run it. Windows may say *"Windows protected your PC"*, because Rodex isn't code-signed yet. Click **More info**, then **Run anyway**.
-3. Rodex opens by itself. The setup guide installs the Studio plugin and connects your AI account (Claude or ChatGPT/Codex).
+3. Rodex opens by itself. The setup guide installs the Studio plugin and connects your AI (Claude Code, Codex, Cursor or a local model). You start with 500 free credits.
+
+By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
 ## Updates
 
@@ -34,7 +36,11 @@ To check by hand: **Help → Check for updates**.
 
 - Windows 10 or 11
 - Roblox Studio
-- A Claude or ChatGPT account (Rodex walks you through signing in)
+- A Claude, ChatGPT or Cursor plan, or a free local model with Ollama (Rodex walks you through it)
+
+## Plans
+
+Free to start with 500 credits. Monthly plans (Starter, Plus, Studio) are listed on [rodexai.dev](https://rodexai.dev/#pricing).
 
 ## Which file do I download?
 
