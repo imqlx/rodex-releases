@@ -40,7 +40,10 @@ To check by hand: **Help → Check for updates**.
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.5)
+## What's new (current version: 0.2.6)
+
+**0.2.6** · Oct 18, 2026
+- Settings: long Auto model lists wrap neatly instead of squeezing the label
 
 **0.2.5** · Oct 18, 2026
 - Big local models now run on PCs with little memory (loaded from disk, slower)
@@ -64,8 +67,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.1** · Oct 18, 2026
 - Finds Claude from the Claude app, one-click AI setup, new settings and fixes
-
-**0.2.0** · Oct 18, 2026
-- First tester build
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
