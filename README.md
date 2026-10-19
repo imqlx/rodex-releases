@@ -46,7 +46,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.12)
+## What's new (current version: 0.2.13)
+
+**0.2.13** · Oct 20, 2026
+- Finds Blender and ChatGPT installed from the Microsoft Store, Steam or other folders
+- Small fixes
 
 **0.2.12** · Oct 19, 2026
 - Fixed Claude Code / Codex install getting stuck on Installing
@@ -74,8 +78,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - safer file and image access from the app
 - chats no longer get stuck or go blank on odd tool output
 - Ctrl+N reuses an empty chat instead of stacking new ones
-
-**0.2.7** · Oct 18, 2026
-- Damaged installs show how to fix themselves instead of crashing
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
