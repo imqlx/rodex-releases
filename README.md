@@ -46,7 +46,12 @@ Free to start with 500 credits. Monthly plans (Starter, Plus, Studio) are listed
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.8)
+## What's new (current version: 0.2.9)
+
+**0.2.9** · Oct 19, 2026
+- Fixed updates asking again and again: Rodex now takes the update instead of reinstalling the old version
+- An update that can't finish offers the installer instead of another restart
+- Settings shows the right version right after updating
 
 **0.2.8** · Oct 18, 2026
 - Studio plugin and app now verify each other with a per-install secret (reopen your place in Studio once after updating)
@@ -68,12 +73,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.4** · Oct 18, 2026
 - Local AI explains when a model is too big for your PC's memory and suggests smaller ones
-
-**0.2.3** · Oct 18, 2026
-- Fixed the antivirus warning (no more hidden helper processes)
-- Fixed ChatGPT 'model not supported' errors
-- Local AI works with small models
-- No more random refreshes or flicker
-- Damaged installs now say how to fix themselves
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
