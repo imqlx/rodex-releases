@@ -46,7 +46,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.11)
+## What's new (current version: 0.2.12)
+
+**0.2.12** · Oct 19, 2026
+- Fixed Claude Code / Codex install getting stuck on Installing
 
 **0.2.11** · Oct 19, 2026
 - Rodex always opens its window, or says why it couldn't start
@@ -74,8 +77,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.7** · Oct 18, 2026
 - Damaged installs show how to fix themselves instead of crashing
-
-**0.2.6** · Oct 18, 2026
-- Settings: long Auto model lists wrap neatly instead of squeezing the label
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
