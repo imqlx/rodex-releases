@@ -40,13 +40,21 @@ To check by hand: **Help → Check for updates**.
 
 ## Plans
 
-Free to start with 500 credits. Monthly plans (Starter, Plus, Studio) are listed on [rodexai.dev](https://rodexai.dev/#pricing).
+Free to start with 500 credits. Monthly plans (Starter, Pro, Max) are listed on [rodexai.dev](https://rodexai.dev/#pricing).
 
 ## Which file do I download?
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.9)
+## What's new (current version: 0.2.10)
+
+**0.2.10** · Oct 19, 2026
+- Codex chats no longer crash on start
+- Stop now stops local models right away
+- Cursor chats count toward credits and can be reverted
+- Blender imports keep sharp edges and mirrored parts show correctly
+- Undo and rollback work more reliably in Studio
+- Many smaller fixes across tools, plugin and app
 
 **0.2.9** · Oct 19, 2026
 - Fixed updates asking again and again: Rodex now takes the update instead of reinstalling the old version
@@ -70,8 +78,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 **0.2.5** · Oct 18, 2026
 - Big local models now run on PCs with little memory (loaded from disk, slower)
 - Slow local models no longer time out after 5 minutes
-
-**0.2.4** · Oct 18, 2026
-- Local AI explains when a model is too big for your PC's memory and suggests smaller ones
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
