@@ -22,7 +22,7 @@
 
 1. **[Download Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe)** (about 100 MB). That's the only file you need.
 2. Run it. Windows may say *"Windows protected your PC"*, because Rodex isn't code-signed yet. Click **More info**, then **Run anyway**.
-3. Rodex opens by itself. The setup guide installs the Studio plugin and connects your AI (Claude Code, Codex, Cursor or a local model). You start with 500 free credits.
+3. Rodex opens by itself. The setup guide installs the Studio plugin and connects your AI (Claude Code, Codex, Cursor or a local model). You start with 300 free credits a month.
 
 By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
@@ -40,13 +40,16 @@ To check by hand: **Help → Check for updates**.
 
 ## Plans
 
-Free to start with 500 credits. Monthly plans (Starter, Pro, Max) are listed on [rodexai.dev](https://rodexai.dev/#pricing).
+Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are listed on [rodexai.dev](https://rodexai.dev/#pricing).
 
 ## Which file do I download?
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.10)
+## What's new (current version: 0.2.11)
+
+**0.2.11** · Oct 19, 2026
+- Rodex always opens its window, or says why it couldn't start
 
 **0.2.10** · Oct 19, 2026
 - Codex chats no longer crash on start
@@ -74,9 +77,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.6** · Oct 18, 2026
 - Settings: long Auto model lists wrap neatly instead of squeezing the label
-
-**0.2.5** · Oct 18, 2026
-- Big local models now run on PCs with little memory (loaded from disk, slower)
-- Slow local models no longer time out after 5 minutes
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
