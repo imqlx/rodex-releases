@@ -46,7 +46,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.13)
+## What's new (current version: 0.2.14)
+
+**0.2.14** · Oct 20, 2026
+- Smoother chats: long replies no longer lag the app
+- faster Library scrolling
 
 **0.2.13** · Oct 20, 2026
 - Finds Blender and ChatGPT installed from the Microsoft Store, Steam or other folders
@@ -70,13 +74,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Fixed updates asking again and again: Rodex now takes the update instead of reinstalling the old version
 - An update that can't finish offers the installer instead of another restart
 - Settings shows the right version right after updating
-
-**0.2.8** · Oct 18, 2026
-- Studio plugin and app now verify each other with a per-install secret (reopen your place in Studio once after updating)
-- updates are checked against a full signature that expires
-- agents know much more about gameplay systems, models and animation
-- safer file and image access from the app
-- chats no longer get stuck or go blank on odd tool output
-- Ctrl+N reuses an empty chat instead of stacking new ones
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
