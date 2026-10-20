@@ -46,7 +46,12 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.18)
+## What's new (current version: 0.2.19)
+
+**0.2.19** · Oct 20, 2026
+- Sign in with one click: approve this PC on rodexai.dev, no code to type
+- New accounts can start right away and confirm their email later (Resend is under the chat box)
+- Credits you redeem on the website show up instantly
 
 **0.2.18** · Oct 20, 2026
 - New installer for the download link (same as 0.2.17)
@@ -68,9 +73,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 **0.2.14** · Oct 20, 2026
 - Smoother chats: long replies no longer lag the app
 - faster Library scrolling
-
-**0.2.13** · Oct 20, 2026
-- Finds Blender and ChatGPT installed from the Microsoft Store, Steam or other folders
-- Small fixes
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
