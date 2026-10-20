@@ -46,7 +46,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.16)
+## What's new (current version: 0.2.17)
+
+**0.2.17** · Oct 20, 2026
+- The Roblox knowledge base now runs on rodexai.dev: always up to date, and it needs you to be signed in
+- Updated terms
 
 **0.2.16** · Oct 20, 2026
 - Confirm your email to use credits (we send a link when you sign up
@@ -68,8 +72,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.12** · Oct 19, 2026
 - Fixed Claude Code / Codex install getting stuck on Installing
-
-**0.2.11** · Oct 19, 2026
-- Rodex always opens its window, or says why it couldn't start
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
