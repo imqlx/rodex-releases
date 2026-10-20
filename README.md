@@ -46,7 +46,14 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.20)
+## What's new (current version: 0.3.0)
+
+**0.3.0** · Oct 20, 2026
+- Shared projects: invite friends to a project with a link
+- everyone sees and prompts the same chats live
+- see who is online and typing
+- Rojo scripts sync to every teammate's folder
+- each person's messages run on their own AI and credits
 
 **0.2.20** · Oct 20, 2026
 - Security update: everyone gets this one
@@ -69,11 +76,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 **0.2.16** · Oct 20, 2026
 - Confirm your email to use credits (we send a link when you sign up
 - resend it from your account page on rodexai.dev)
-
-**0.2.15** · Oct 20, 2026
-- Rodex accounts: sign in with your rodexai.dev account (free to create)
-- Credits now live on your account and are shared across all your PCs
-- Codes and invites go to your account
-- Safer project files, uploads and plugin connection
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
