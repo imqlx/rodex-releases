@@ -46,7 +46,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.14)
+## What's new (current version: 0.2.15)
+
+**0.2.15** · Oct 20, 2026
+- Rodex accounts: sign in with your rodexai.dev account (free to create)
+- Credits now live on your account and are shared across all your PCs
+- Codes and invites go to your account
+- Safer project files, uploads and plugin connection
 
 **0.2.14** · Oct 20, 2026
 - Smoother chats: long replies no longer lag the app
@@ -69,10 +75,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Blender imports keep sharp edges and mirrored parts show correctly
 - Undo and rollback work more reliably in Studio
 - Many smaller fixes across tools, plugin and app
-
-**0.2.9** · Oct 19, 2026
-- Fixed updates asking again and again: Rodex now takes the update instead of reinstalling the old version
-- An update that can't finish offers the installer instead of another restart
-- Settings shows the right version right after updating
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
