@@ -46,7 +46,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.15)
+## What's new (current version: 0.2.16)
+
+**0.2.16** · Oct 20, 2026
+- Confirm your email to use credits (we send a link when you sign up
+- resend it from your account page on rodexai.dev)
 
 **0.2.15** · Oct 20, 2026
 - Rodex accounts: sign in with your rodexai.dev account (free to create)
@@ -67,13 +71,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.11** · Oct 19, 2026
 - Rodex always opens its window, or says why it couldn't start
-
-**0.2.10** · Oct 19, 2026
-- Codex chats no longer crash on start
-- Stop now stops local models right away
-- Cursor chats count toward credits and can be reverted
-- Blender imports keep sharp edges and mirrored parts show correctly
-- Undo and rollback work more reliably in Studio
-- Many smaller fixes across tools, plugin and app
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
