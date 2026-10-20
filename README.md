@@ -46,7 +46,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.2.19)
+## What's new (current version: 0.2.20)
+
+**0.2.20** · Oct 20, 2026
+- Security update: everyone gets this one
+- Safer app window, updates and settings
+- AI-written Blender scripts can no longer start programs or open files unless you turn on shell commands
+- New installer with extra protection against misuse
 
 **0.2.19** · Oct 20, 2026
 - Sign in with one click: approve this PC on rodexai.dev, no code to type
@@ -69,9 +75,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Credits now live on your account and are shared across all your PCs
 - Codes and invites go to your account
 - Safer project files, uploads and plugin connection
-
-**0.2.14** · Oct 20, 2026
-- Smoother chats: long replies no longer lag the app
-- faster Library scrolling
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
