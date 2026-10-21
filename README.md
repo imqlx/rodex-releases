@@ -46,7 +46,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.3.1)
+## What's new (current version: 0.3.2)
+
+**0.3.2** · Oct 21, 2026
+- Sound Lab: Rodex finds, checks and adds sound effects to your game
+- Badges: Rodex makes badges with icons, and paid ones always ask first
 
 **0.3.1** · Oct 21, 2026
 - Big chats open instantly
@@ -76,9 +80,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 
 **0.2.18** · Oct 20, 2026
 - New installer for the download link (same as 0.2.17)
-
-**0.2.17** · Oct 20, 2026
-- The Roblox knowledge base now runs on rodexai.dev: always up to date, and it needs you to be signed in
-- Updated terms
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
