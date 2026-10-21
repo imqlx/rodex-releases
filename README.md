@@ -46,7 +46,15 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.3.0)
+## What's new (current version: 0.3.1)
+
+**0.3.1** · Oct 21, 2026
+- Big chats open instantly
+- older messages load as you scroll up
+- Long replies fold their earlier steps behind one row
+- Errors now come with the button that fixes them
+- A bad update rolls itself back
+- Settings and chats keep backups, and chats can be exported
 
 **0.3.0** · Oct 20, 2026
 - Shared projects: invite friends to a project with a link
@@ -72,9 +80,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 **0.2.17** · Oct 20, 2026
 - The Roblox knowledge base now runs on rodexai.dev: always up to date, and it needs you to be signed in
 - Updated terms
-
-**0.2.16** · Oct 20, 2026
-- Confirm your email to use credits (we send a link when you sign up
-- resend it from your account page on rodexai.dev)
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
