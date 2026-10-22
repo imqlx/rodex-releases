@@ -143,6 +143,8 @@ jobs:
           JS
             npx electron-builder --config build/signed.js --mac dmg --${{ matrix.arch }} --publish never
           else
+            # Unset secrets arrive as empty strings, and an empty CSC_LINK reads as a certificate path.
+            unset CSC_LINK CSC_KEY_PASSWORD APPLE_ID APPLE_APP_SPECIFIC_PASSWORD APPLE_TEAM_ID
             CSC_IDENTITY_AUTO_DISCOVERY=false npx electron-builder --mac dmg --${{ matrix.arch }} --publish never
           fi
 
