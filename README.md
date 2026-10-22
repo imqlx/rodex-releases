@@ -37,9 +37,19 @@ These links always give the newest version. By downloading you agree to the [Ter
 2. Rodex installs and opens by itself.
 
 ### macOS
+**Quickest:** open Terminal and paste
+
+```bash
+curl -fsSL https://rodexai.dev/install-mac.sh | bash
+```
+
+It picks the build for your Mac, checks it against the release's checksum and puts Rodex in Applications, with no security prompt.
+
+**Or with the .dmg:**
 1. Open the **.dmg** for your Mac (Apple Silicon for M1 and newer, Intel for older Macs) and drag **Rodex** into **Applications**.
 2. Open Rodex from Applications. The first time, macOS says it can't check Rodex for malware, because it isn't notarized yet: click **Done**, open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to Rodex.
-3. When Rodex asks to see Studio's window (for playtest screenshots), allow it under **Screen Recording**.
+
+When Rodex asks to see Studio's window (for playtest screenshots), allow it under **Screen Recording**.
 
 ### Linux
 Roblox Studio has no Linux version; Rodex works with Studio running through [Vinegar](https://vinegarhq.org).
