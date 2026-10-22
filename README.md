@@ -46,7 +46,12 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.3.3)
+## What's new (current version: 0.3.4)
+
+**0.3.4** · Oct 22, 2026
+- Sub-agents are off by default (start a message with /team to use them)
+- New Save usage mode in Settings → Agent for small AI plans like Claude Pro
+- Leaner prompt that uses less of your AI plan
 
 **0.3.3** · Oct 22, 2026
 - Playtests keep the place name instead of 'Game'
@@ -75,10 +80,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Safer app window, updates and settings
 - AI-written Blender scripts can no longer start programs or open files unless you turn on shell commands
 - New installer with extra protection against misuse
-
-**0.2.19** · Oct 20, 2026
-- Sign in with one click: approve this PC on rodexai.dev, no code to type
-- New accounts can start right away and confirm their email later (Resend is under the chat box)
-- Credits you redeem on the website show up instantly
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
