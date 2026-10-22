@@ -46,7 +46,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are li
 
 Only **Rodex-Setup.exe**, from the button above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`) are what Rodex downloads by itself when it updates. You can ignore them.
 
-## What's new (current version: 0.3.2)
+## What's new (current version: 0.3.3)
+
+**0.3.3** · Oct 22, 2026
+- Playtests keep the place name instead of 'Game'
 
 **0.3.2** · Oct 21, 2026
 - Sound Lab: Rodex finds, checks and adds sound effects to your game
@@ -77,8 +80,5 @@ Only **Rodex-Setup.exe**, from the button above. The other files on the [Release
 - Sign in with one click: approve this PC on rodexai.dev, no code to type
 - New accounts can start right away and confirm their email later (Resend is under the chat box)
 - Credits you redeem on the website show up instantly
-
-**0.2.18** · Oct 20, 2026
-- New installer for the download link (same as 0.2.17)
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
