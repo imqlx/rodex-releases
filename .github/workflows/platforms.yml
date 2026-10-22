@@ -1,0 +1,203 @@
+# Builds Rodex's macOS and Linux installers on GitHub's runners.
+#
+# scripts/release.js (in the Rodex source repo) pushes this file to the public
+# releases repo and starts it. The source itself never comes here: each build
+# starts from the release's code bundle (rodex-<version>.update, the same
+# signed bundle installs update from) and its npm lockfile, both checked
+# against the SHA-256 release.js passes in.
+#
+#   mode=build    build the installers and upload them to the (draft) release
+#   mode=promote  copy a published release's installers to the fixed "setup"
+#                 release under their stable names (Rodex-mac-arm64.dmg, …)
+#
+# Signing: with the repository secrets MAC_CERT_P12_BASE64, MAC_CERT_PASSWORD,
+# APPLE_ID, APPLE_APP_SPECIFIC_PASSWORD and APPLE_TEAM_ID set, the Mac builds
+# are signed with that Developer ID and notarized. Without them they're
+# ad-hoc signed (they run; macOS asks once in Privacy & Security).
+name: Platform installers
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag (v1.0.0)
+        required: true
+      version:
+        description: Version (1.0.0)
+        required: true
+      bundle_sha256:
+        description: SHA-256 of rodex-<version>.update
+        required: false
+        default: ''
+      lock_sha256:
+        description: SHA-256 of rodex-<version>.lock.json
+        required: false
+        default: ''
+      mode:
+        description: build or promote
+        required: false
+        default: build
+
+permissions:
+  contents: write
+
+concurrency:
+  group: platforms-${{ inputs.tag }}-${{ inputs.mode }}
+
+jobs:
+  build:
+    if: inputs.mode == 'build'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: mac-arm64, os: macos-15, target: mac, arch: arm64, node_arch: arm64 }
+          # The x64 Node runs under Rosetta, so npm installs the Intel builds of native packages.
+          - { name: mac-x64, os: macos-15, target: mac, arch: x64, node_arch: x64 }
+          - { name: linux-x64, os: ubuntu-24.04, target: linux, arch: x64, node_arch: x64 }
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ inputs.tag }}
+      VERSION: ${{ inputs.version }}
+      BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+      LOCK_SHA: ${{ inputs.lock_sha256 }}
+    steps:
+      - name: Check the inputs
+        run: |
+          echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$' || { echo "bad tag"; exit 1; }
+          [ "$TAG" = "v$VERSION" ] || { echo "tag and version differ"; exit 1; }
+          echo "$BUNDLE_SHA" | grep -Eq '^[0-9a-f]{64}$' || { echo "bad bundle hash"; exit 1; }
+          echo "$LOCK_SHA" | grep -Eq '^[0-9a-f]{64}$' || { echo "bad lock hash"; exit 1; }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          architecture: ${{ matrix.node_arch }}
+
+      - name: Fetch the code bundle
+        run: |
+          mkdir -p dl app
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --dir dl --pattern "rodex-$VERSION.update" --pattern "rodex-$VERSION.lock.json"
+          echo "$BUNDLE_SHA  dl/rodex-$VERSION.update" | shasum -a 256 -c -
+          echo "$LOCK_SHA  dl/rodex-$VERSION.lock.json" | shasum -a 256 -c -
+
+      # The bundle format of core/update-bundle.js: gzip of u32 header length,
+      # header JSON ({ files: [[path, size], …] }), then the files' bytes.
+      - name: Unpack
+        run: |
+          node -e '
+            const fs = require("fs"), path = require("path"), zlib = require("zlib");
+            const raw = zlib.gunzipSync(fs.readFileSync(process.argv[1]));
+            const n = raw.readUInt32LE(0);
+            const { files } = JSON.parse(raw.subarray(4, 4 + n).toString("utf8"));
+            const root = path.resolve("app");
+            let at = 4 + n;
+            for (const [rel, size] of files) {
+              const to = path.resolve(root, rel);
+              if (!to.startsWith(root + path.sep)) throw new Error("bad path in bundle: " + rel);
+              fs.mkdirSync(path.dirname(to), { recursive: true });
+              fs.writeFileSync(to, raw.subarray(at, at + size));
+              at += size;
+            }
+            if (at !== raw.length) throw new Error("the bundle is damaged");
+            const pkg = JSON.parse(fs.readFileSync("app/package.json", "utf8"));
+            if (pkg.version !== process.env.VERSION) throw new Error("bundle is version " + pkg.version);
+            if (!fs.existsSync("app/core/platform.js")) throw new Error("Rodex " + pkg.version + " predates the macOS and Linux builds");
+            console.log("unpacked " + files.length + " files of Rodex " + pkg.version);
+          ' "dl/rodex-$VERSION.update"
+          cp "dl/rodex-$VERSION.lock.json" app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci --no-audit --no-fund
+
+      - name: Build (macOS)
+        if: matrix.target == 'mac'
+        working-directory: app
+        env:
+          CSC_LINK: ${{ secrets.MAC_CERT_P12_BASE64 }}
+          CSC_KEY_PASSWORD: ${{ secrets.MAC_CERT_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          if [ -n "$CSC_LINK" ]; then
+            # Developer ID: hardened runtime, the entitlements Electron needs, notarized.
+            mkdir -p build
+            cat > build/entitlements.mac.plist <<'PLIST'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0"><dict>
+            <key>com.apple.security.cs.allow-jit</key><true/>
+            <key>com.apple.security.cs.allow-unsigned-executable-memory</key><true/>
+            <key>com.apple.security.automation.apple-events</key><true/>
+          </dict></plist>
+          PLIST
+            cat > build/signed.js <<'JS'
+          const base = require('../package.json').build;
+          const { identity, ...mac } = base.mac;
+          module.exports = { ...base, mac: { ...mac, hardenedRuntime: true, entitlements: 'build/entitlements.mac.plist', entitlementsInherit: 'build/entitlements.mac.plist', notarize: true } };
+          JS
+            npx electron-builder --config build/signed.js --mac dmg --${{ matrix.arch }} --publish never
+          else
+            CSC_IDENTITY_AUTO_DISCOVERY=false npx electron-builder --mac dmg --${{ matrix.arch }} --publish never
+          fi
+
+      - name: Check the Mac app starts
+        if: matrix.target == 'mac'
+        working-directory: app/release
+        run: |
+          APP=$(ls -d mac*/Rodex.app | head -1)
+          codesign --verify --deep --strict --verbose=2 "$APP"
+          export RODEX_SMOKE=1 RODEX_HOME="$RUNNER_TEMP/rodex-home"
+          "$APP/Contents/MacOS/Rodex" | tee smoke.txt
+          grep -q "SMOKE errors: none" smoke.txt
+
+      - name: Build (Linux)
+        if: matrix.target == 'linux'
+        working-directory: app
+        run: npx electron-builder --linux AppImage deb --x64 --publish never
+
+      - name: Check the Linux app starts
+        if: matrix.target == 'linux'
+        working-directory: app/release
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb > /dev/null
+          export RODEX_SMOKE=1 RODEX_HOME="$RUNNER_TEMP/rodex-home"
+          # GitHub's Ubuntu image restricts the user namespaces Chromium's sandbox uses.
+          xvfb-run -a ./linux-unpacked/rodex --no-sandbox | tee smoke.txt
+          grep -q "SMOKE errors: none" smoke.txt
+
+      - name: Upload to the release
+        working-directory: app/release
+        run: |
+          if [ "${{ matrix.target }}" = mac ]; then
+            files="Rodex-$VERSION-mac-${{ matrix.arch }}.dmg"
+          else
+            files="Rodex-$VERSION-linux-x86_64.AppImage Rodex-$VERSION-linux-amd64.deb"
+          fi
+          ls -la $files
+          shasum -a 256 $files
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber $files
+
+  promote:
+    if: inputs.mode == 'promote'
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ inputs.tag }}
+      VERSION: ${{ inputs.version }}
+    steps:
+      - name: Copy the installers to the setup release
+        run: |
+          echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$' && [ "$TAG" = "v$VERSION" ] || { echo "bad tag"; exit 1; }
+          mkdir dl && cd dl
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern "Rodex-$VERSION-mac-*.dmg" --pattern "Rodex-$VERSION-linux-*"
+          for f in Rodex-$VERSION-mac-arm64.dmg Rodex-$VERSION-mac-x64.dmg Rodex-$VERSION-linux-x86_64.AppImage Rodex-$VERSION-linux-amd64.deb; do
+            if [ -f "$f" ]; then mv "$f" "Rodex-${f#Rodex-$VERSION-}"; fi
+          done
+          ls -la
+          gh release upload setup --repo "$GITHUB_REPOSITORY" --clobber Rodex-*
