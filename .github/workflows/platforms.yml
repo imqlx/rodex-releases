@@ -34,9 +34,13 @@ on:
         required: false
         default: ''
       mode:
-        description: build or promote
+        description: build, promote or mac-install-test
         required: false
         default: build
+      script_b64:
+        description: mac-install-test only; the installer to try (base64), or empty for the live rodexai.dev/install-mac.sh
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -184,6 +188,31 @@ jobs:
           ls -la $files
           shasum -a 256 $files
           gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber $files
+
+  # The one-line Mac install (site/public/install-mac.sh) on a clean Mac:
+  # it installs the published build, without a quarantine flag, and it starts.
+  mac-install-test:
+    if: inputs.mode == 'mac-install-test'
+    runs-on: macos-15
+    env:
+      SCRIPT_B64: ${{ inputs.script_b64 }}
+    steps:
+      - name: Run the installer
+        run: |
+          if [ -n "$SCRIPT_B64" ]; then echo "$SCRIPT_B64" | base64 -d > install-mac.sh; else curl -fsSL https://rodexai.dev/install-mac.sh -o install-mac.sh; fi
+          RODEX_NO_OPEN=1 bash install-mac.sh
+      - name: Check the installed app
+        run: |
+          APP=/Applications/Rodex.app
+          [ -d "$APP" ] || APP="$HOME/Applications/Rodex.app"
+          plutil -extract CFBundleShortVersionString raw -o - "$APP/Contents/Info.plist"
+          if xattr -p com.apple.quarantine "$APP" 2>/dev/null; then echo "quarantine flag is set"; exit 1; fi
+          codesign --verify --deep --strict "$APP"
+          export RODEX_SMOKE=1 RODEX_HOME="$RUNNER_TEMP/rodex-home"
+          "$APP/Contents/MacOS/Rodex" | tee smoke.txt
+          grep -q "SMOKE errors: none" smoke.txt
+      - name: Run it again over the installed copy
+        run: RODEX_NO_OPEN=1 bash install-mac.sh
 
   promote:
     if: inputs.mode == 'promote'
