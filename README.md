@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.0)
+## What's new (current version: 1.0.1)
+
+**1.0.1** · Oct 23, 2026
+- New Mobile Buttons add-on: touch buttons that look and sit like Roblox's jump button
+- Analytics and Thumbnails pages are hidden for now while we improve them
 
 **1.0.0** · Oct 22, 2026
 - Rodex 1.0 is out for everyone
@@ -112,12 +116,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Errors now come with the button that fixes them
 - A bad update rolls itself back
 - Settings and chats keep backups, and chats can be exported
-
-**0.3.0** · Oct 20, 2026
-- Shared projects: invite friends to a project with a link
-- everyone sees and prompts the same chats live
-- see who is online and typing
-- Rojo scripts sync to every teammate's folder
-- each person's messages run on their own AI and credits
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
