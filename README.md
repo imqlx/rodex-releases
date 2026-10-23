@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.2)
+## What's new (current version: 1.0.3)
+
+**1.0.3** · Oct 23, 2026
+- Safer Claude Code updates: Rodex updates each install the way it was installed and leaves the Claude desktop app's copy alone
+- Finds the version of project-local npm installs of Claude Code
 
 **1.0.2** · Oct 23, 2026
 - Fixed "Claude Code does not support this model": Rodex now runs the newest Claude Code on your PC
@@ -109,9 +113,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 
 **0.3.3** · Oct 22, 2026
 - Playtests keep the place name instead of 'Game'
-
-**0.3.2** · Oct 21, 2026
-- Sound Lab: Rodex finds, checks and adds sound effects to your game
-- Badges: Rodex makes badges with icons, and paid ones always ask first
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
