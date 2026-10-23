@@ -84,7 +84,12 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.1)
+## What's new (current version: 1.0.2)
+
+**1.0.2** · Oct 23, 2026
+- Fixed "Claude Code does not support this model": Rodex now runs the newest Claude Code on your PC
+- If Claude Code is too old, Rodex updates it by itself and retries
+- Update Claude Code button on that error
 
 **1.0.1** · Oct 23, 2026
 - New Mobile Buttons add-on: touch buttons that look and sit like Roblox's jump button
@@ -108,13 +113,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **0.3.2** · Oct 21, 2026
 - Sound Lab: Rodex finds, checks and adds sound effects to your game
 - Badges: Rodex makes badges with icons, and paid ones always ask first
-
-**0.3.1** · Oct 21, 2026
-- Big chats open instantly
-- older messages load as you scroll up
-- Long replies fold their earlier steps behind one row
-- Errors now come with the button that fixes them
-- A bad update rolls itself back
-- Settings and chats keep backups, and chats can be exported
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
