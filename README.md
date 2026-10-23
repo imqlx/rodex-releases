@@ -84,7 +84,12 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.4)
+## What's new (current version: 1.0.5)
+
+**1.0.5** · Oct 23, 2026
+- Uses far less of your Claude plan: each step reads ~70% fewer tokens
+- Long chats get compacted much sooner
+- Claude Pro starts new chats on Sonnet 5.5
 
 **1.0.4** · Oct 23, 2026
 - 3D viewer loads its parts on demand (no visible change)
@@ -108,10 +113,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Mac menu bar, Dock and Keychain support
 - Updates install on every platform
 - Downloads for every computer at rodexai.dev/download
-
-**0.3.4** · Oct 22, 2026
-- Sub-agents are off by default (start a message with /team to use them)
-- New Save usage mode in Settings → Agent for small AI plans like Claude Pro
-- Leaner prompt that uses less of your AI plan
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
