@@ -84,7 +84,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.3)
+## What's new (current version: 1.0.4)
+
+**1.0.4** · Oct 23, 2026
+- 3D viewer loads its parts on demand (no visible change)
 
 **1.0.3** · Oct 23, 2026
 - Safer Claude Code updates: Rodex updates each install the way it was installed and leaves the Claude desktop app's copy alone
@@ -110,8 +113,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Sub-agents are off by default (start a message with /team to use them)
 - New Save usage mode in Settings → Agent for small AI plans like Claude Pro
 - Leaner prompt that uses less of your AI plan
-
-**0.3.3** · Oct 22, 2026
-- Playtests keep the place name instead of 'Game'
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
