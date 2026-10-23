@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.5)
+## What's new (current version: 1.0.6)
+
+**1.0.6** · Oct 23, 2026
+- Even lighter on your AI plan: place overviews about 90% shorter in big games
+- long scripts are read in parts
+- smaller screenshots
+- helper agents that only look or playtest use Sonnet
 
 **1.0.5** · Oct 23, 2026
 - Uses far less of your Claude plan: each step reads ~70% fewer tokens
@@ -106,12 +112,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.1** · Oct 23, 2026
 - New Mobile Buttons add-on: touch buttons that look and sit like Roblox's jump button
 - Analytics and Thumbnails pages are hidden for now while we improve them
-
-**1.0.0** · Oct 22, 2026
-- Rodex 1.0 is out for everyone
-- New: macOS (Apple Silicon and Intel) and Linux (AppImage and .deb)
-- Mac menu bar, Dock and Keychain support
-- Updates install on every platform
-- Downloads for every computer at rodexai.dev/download
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
