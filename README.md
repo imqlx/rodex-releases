@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.6)
+## What's new (current version: 1.0.7)
+
+**1.0.7** · Oct 25, 2026
+- Use Rodex from your phone (rodexai.dev/phone)
+- Animator: make, preview and save animations for any rig
+- Attach files, folders and zip packs from the +
+- Security and stability fixes from an audit
 
 **1.0.6** · Oct 23, 2026
 - Even lighter on your AI plan: place overviews about 90% shorter in big games
@@ -108,9 +114,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Fixed "Claude Code does not support this model": Rodex now runs the newest Claude Code on your PC
 - If Claude Code is too old, Rodex updates it by itself and retries
 - Update Claude Code button on that error
-
-**1.0.1** · Oct 23, 2026
-- New Mobile Buttons add-on: touch buttons that look and sit like Roblox's jump button
-- Analytics and Thumbnails pages are hidden for now while we improve them
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
