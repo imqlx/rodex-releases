@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.7)
+## What's new (current version: 1.0.8)
+
+**1.0.8** · Oct 29, 2026
+- ChatGPT chats no longer fail with 'argument cannot be passed through cmd.exe'
+- Stop always ends a stuck reply, and queued messages then send
+- replies no longer hang on Thinking in projects shared with your phone
+- a small status over the message box shows what Rodex is doing and for how long
 
 **1.0.7** · Oct 25, 2026
 - Use Rodex from your phone (rodexai.dev/phone)
@@ -109,10 +115,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.3** · Oct 23, 2026
 - Safer Claude Code updates: Rodex updates each install the way it was installed and leaves the Claude desktop app's copy alone
 - Finds the version of project-local npm installs of Claude Code
-
-**1.0.2** · Oct 23, 2026
-- Fixed "Claude Code does not support this model": Rodex now runs the newest Claude Code on your PC
-- If Claude Code is too old, Rodex updates it by itself and retries
-- Update Claude Code button on that error
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
