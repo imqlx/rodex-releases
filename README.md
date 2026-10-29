@@ -87,10 +87,8 @@ Only the one for your computer, from the table above. The other files on the [Re
 ## What's new (current version: 1.0.9)
 
 **1.0.9** · Oct 29, 2026
-- AI accounts show which ChatGPT account is signed in, with Switch account
-- Delete all chats of a project (or every project) from the project menu and Settings
-- Rodex wires into your own UI instead of rebuilding it, and leaves UI it didn't make alone
-- Every release now updates the installers on the website
+- The AI uses your existing UI instead of building its own
+- it no longer adds constraints or changes text scaling on UI it didn't make
 
 **1.0.8** · Oct 29, 2026
 - ChatGPT chats no longer fail with 'argument cannot be passed through cmd.exe'
