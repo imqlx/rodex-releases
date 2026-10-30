@@ -22,11 +22,11 @@
 
 | Platform | Download |
 |---|---|
-| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 104 MB |
-| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 117 MB |
-| macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 123 MB |
-| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 124 MB |
-| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 97 MB |
+| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 111 MB |
+| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 123 MB |
+| macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 129 MB |
+| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 131 MB |
+| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 102 MB |
 
 These links always give the newest version. By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
@@ -84,7 +84,16 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.9)
+## What's new (current version: 1.0.10)
+
+**1.0.10** · Oct 30, 2026
+- Built-in Rodex Vault and your own knowledge vaults (Settings, Agent)
+- Asset packs: find and import models, materials, skies and animations
+- Copy check spots AI-sounding text in UI, game pages and comments
+- Works with Studio's own Script Sync folders, no Rojo needed
+- Chats side by side, rebuilt and easier to follow
+- Several Studio places open at once, each chat keeps its own
+- Sharper, truer-coloured vector icons
 
 **1.0.9** · Oct 29, 2026
 - The AI uses your existing UI instead of building its own
@@ -112,8 +121,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Uses far less of your Claude plan: each step reads ~70% fewer tokens
 - Long chats get compacted much sooner
 - Claude Pro starts new chats on Sonnet 5.5
-
-**1.0.4** · Oct 23, 2026
-- 3D viewer loads its parts on demand (no visible change)
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
