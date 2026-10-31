@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.10)
+## What's new (current version: 1.0.11)
+
+**1.0.11** · Oct 31, 2026
+- Thumbnail Studio is back: genre playbooks, your game and avatar as references, start from a Studio shot
+- Sound Lab previews are audible in Studio again
+- no more freeze on a project's first message
+- smaller fixes
 
 **1.0.10** · Oct 30, 2026
 - Built-in Rodex Vault and your own knowledge vaults (Settings, Agent)
@@ -116,10 +122,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - long scripts are read in parts
 - smaller screenshots
 - helper agents that only look or playtest use Sonnet
-
-**1.0.5** · Oct 23, 2026
-- Uses far less of your Claude plan: each step reads ~70% fewer tokens
-- Long chats get compacted much sooner
-- Claude Pro starts new chats on Sonnet 5.5
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
