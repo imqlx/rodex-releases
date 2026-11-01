@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.11)
+## What's new (current version: 1.0.12)
+
+**1.0.12** · Nov 1, 2026
+- Fixed 'spawn ENAMETOOLONG' when starting a Codex chat, thumbnails or images
+- Rodex shows what you're building on Discord (Settings, Studio, Show Rodex on Discord)
 
 **1.0.11** · Oct 31, 2026
 - Thumbnail Studio is back: genre playbooks, your game and avatar as references, start from a Studio shot
@@ -116,11 +120,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Animator: make, preview and save animations for any rig
 - Attach files, folders and zip packs from the +
 - Security and stability fixes from an audit
-
-**1.0.6** · Oct 23, 2026
-- Even lighter on your AI plan: place overviews about 90% shorter in big games
-- long scripts are read in parts
-- smaller screenshots
-- helper agents that only look or playtest use Sonnet
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
