@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.13)
+## What's new (current version: 1.0.14)
+
+**1.0.14** · Nov 1, 2026
+- New /balance command: balances your game's economy, pacing, prices and combat from its real numbers, a progression simulation and similar live games
+- New /monetization command: ranked money ideas priced against similar games and checked for pay-to-win
 
 **1.0.13** · Nov 1, 2026
 - Local AI models now actually build in Studio: tool calls they write as text run
@@ -113,11 +117,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.9** · Oct 29, 2026
 - The AI uses your existing UI instead of building its own
 - it no longer adds constraints or changes text scaling on UI it didn't make
-
-**1.0.8** · Oct 29, 2026
-- ChatGPT chats no longer fail with 'argument cannot be passed through cmd.exe'
-- Stop always ends a stuck reply, and queued messages then send
-- replies no longer hang on Thinking in projects shared with your phone
-- a small status over the message box shows what Rodex is doing and for how long
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
