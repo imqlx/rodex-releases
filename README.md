@@ -84,7 +84,12 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.12)
+## What's new (current version: 1.0.13)
+
+**1.0.13** · Nov 1, 2026
+- Local AI models now actually build in Studio: tool calls they write as text run
+- a model that only describes the work gets told to do it
+- no more stray user_update tags in replies
 
 **1.0.12** · Nov 1, 2026
 - Fixed 'spawn ENAMETOOLONG' when starting a Codex chat, thumbnails or images
@@ -114,11 +119,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Stop always ends a stuck reply, and queued messages then send
 - replies no longer hang on Thinking in projects shared with your phone
 - a small status over the message box shows what Rodex is doing and for how long
-
-**1.0.7** · Oct 25, 2026
-- Use Rodex from your phone (rodexai.dev/phone)
-- Animator: make, preview and save animations for any rig
-- Attach files, folders and zip packs from the +
-- Security and stability fixes from an audit
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
