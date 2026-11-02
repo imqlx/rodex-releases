@@ -84,7 +84,15 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.17)
+## What's new (current version: 1.0.18)
+
+**1.0.18** · Nov 2, 2026
+- Analytics funnels: /funnels finds the key moments in your game and wires up Roblox analytics funnels
+- Local models retry a tool call that failed instead of guessing the result, and say when the model is still loading
+- Shared chats no longer get stuck when Rodex restarted mid-reply
+- Image tools explain when your ChatGPT plan can't make pictures
+- Experience settings: API key checks fixed
+- Notes: simpler sidebar and menus
 
 **1.0.17** · Nov 2, 2026
 - Fixed chats stopping at once with 'Claude Code exited (0)' when the Claude desktop app is installed
@@ -116,9 +124,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Local AI models now actually build in Studio: tool calls they write as text run
 - a model that only describes the work gets told to do it
 - no more stray user_update tags in replies
-
-**1.0.12** · Nov 1, 2026
-- Fixed 'spawn ENAMETOOLONG' when starting a Codex chat, thumbnails or images
-- Rodex shows what you're building on Discord (Settings, Studio, Show Rodex on Discord)
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
