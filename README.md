@@ -84,7 +84,14 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.14)
+## What's new (current version: 1.0.15)
+
+**1.0.15** · Nov 2, 2026
+- Local AI models: tool calls written as text no longer show up as raw JSON in the chat
+- the model is told what went wrong and gets one retry
+- replies that loop or never stop are cut off
+- Discord status polish and the profile picture loads right away
+- fixes for approvals, updates, sync, memory and privacy
 
 **1.0.14** · Nov 1, 2026
 - New /balance command: balances your game's economy, pacing, prices and combat from its real numbers, a progression simulation and similar live games
@@ -113,9 +120,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Chats side by side, rebuilt and easier to follow
 - Several Studio places open at once, each chat keeps its own
 - Sharper, truer-coloured vector icons
-
-**1.0.9** · Oct 29, 2026
-- The AI uses your existing UI instead of building its own
-- it no longer adds constraints or changes text scaling on UI it didn't make
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
