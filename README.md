@@ -84,7 +84,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.16)
+## What's new (current version: 1.0.17)
+
+**1.0.17** · Nov 2, 2026
+- Fixed chats stopping at once with 'Claude Code exited (0)' when the Claude desktop app is installed
 
 **1.0.16** · Nov 2, 2026
 - Notes: plan your games in Markdown, linked into chats
@@ -117,11 +120,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.12** · Nov 1, 2026
 - Fixed 'spawn ENAMETOOLONG' when starting a Codex chat, thumbnails or images
 - Rodex shows what you're building on Discord (Settings, Studio, Show Rodex on Discord)
-
-**1.0.11** · Oct 31, 2026
-- Thumbnail Studio is back: genre playbooks, your game and avatar as references, start from a Studio shot
-- Sound Lab previews are audible in Studio again
-- no more freeze on a project's first message
-- smaller fixes
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
