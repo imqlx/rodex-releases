@@ -22,8 +22,8 @@
 
 | Platform | Download |
 |---|---|
-| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 111 MB |
-| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 123 MB |
+| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 112 MB |
+| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 124 MB |
 | macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 129 MB |
 | Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 131 MB |
 | Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 102 MB |
@@ -84,7 +84,19 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.15)
+## What's new (current version: 1.0.16)
+
+**1.0.16** · Nov 2, 2026
+- Notes: plan your games in Markdown, linked into chats
+- Revert undoes a chat's Studio changes in one step
+- Ship Check before you publish
+- Save Guard checks updates against real player saves
+- Mockup: rebuild a UI picture natively with ui_preview
+- Spend preview shows what a big job usually costs
+- Weave: steadier on big places
+- Sound Lab previews play even when Studio isn't in focus
+- Discord shows Rodex links
+- Projects menu sorted by activity
 
 **1.0.15** · Nov 2, 2026
 - Local AI models: tool calls written as text no longer show up as raw JSON in the chat
@@ -111,14 +123,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Sound Lab previews are audible in Studio again
 - no more freeze on a project's first message
 - smaller fixes
-
-**1.0.10** · Oct 30, 2026
-- Built-in Rodex Vault and your own knowledge vaults (Settings, Agent)
-- Asset packs: find and import models, materials, skies and animations
-- Copy check spots AI-sounding text in UI, game pages and comments
-- Works with Studio's own Script Sync folders, no Rojo needed
-- Chats side by side, rebuilt and easier to follow
-- Several Studio places open at once, each chat keeps its own
-- Sharper, truer-coloured vector icons
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
