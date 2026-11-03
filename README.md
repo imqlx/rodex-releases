@@ -25,7 +25,7 @@
 | Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 112 MB |
 | macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 124 MB |
 | macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 129 MB |
-| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 131 MB |
+| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 132 MB |
 | Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 102 MB |
 
 These links always give the newest version. By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.18)
+## What's new (current version: 1.0.19)
+
+**1.0.19** · Nov 3, 2026
+- Shared chats no longer stay stuck on replying after a long reply
+- You can send and stop again in those chats
 
 **1.0.18** · Nov 2, 2026
 - Analytics funnels: /funnels finds the key moments in your game and wires up Roblox analytics funnels
@@ -119,10 +123,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.14** · Nov 1, 2026
 - New /balance command: balances your game's economy, pacing, prices and combat from its real numbers, a progression simulation and similar live games
 - New /monetization command: ranked money ideas priced against similar games and checked for pay-to-win
-
-**1.0.13** · Nov 1, 2026
-- Local AI models now actually build in Studio: tool calls they write as text run
-- a model that only describes the work gets told to do it
-- no more stray user_update tags in replies
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
