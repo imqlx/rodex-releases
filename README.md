@@ -22,11 +22,11 @@
 
 | Platform | Download |
 |---|---|
-| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 112 MB |
+| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 109 MB |
 | macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 124 MB |
 | macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 129 MB |
 | Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 132 MB |
-| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 102 MB |
+| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 103 MB |
 
 These links always give the newest version. By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.19)
+## What's new (current version: 1.0.20)
+
+**1.0.20** · Nov 4, 2026
+- Rodex no longer pauses a reply for spending without changing the game
+- New Weave look and fixes
+- Open sub places
+- Mac progress bar fix
 
 **1.0.19** · Nov 3, 2026
 - Shared chats no longer stay stuck on replying after a long reply
@@ -119,9 +125,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - replies that loop or never stop are cut off
 - Discord status polish and the profile picture loads right away
 - fixes for approvals, updates, sync, memory and privacy
-
-**1.0.14** · Nov 1, 2026
-- New /balance command: balances your game's economy, pacing, prices and combat from its real numbers, a progression simulation and similar live games
-- New /monetization command: ranked money ideas priced against similar games and checked for pay-to-win
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
