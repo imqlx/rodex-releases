@@ -84,7 +84,16 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.21)
+## What's new (current version: 1.0.22)
+
+**1.0.22** · Nov 5, 2026
+- Grok is a new AI choice for chats
+- Connect Figma to turn designs into Roblox UI and back
+- Several chats on one place now see each other and test together at the end
+- Script saves get type checks when luau-lsp is installed
+- New check for UI that doesn't fit phones and tablets
+- Two-player tests only run when they're really needed (Settings → Agent)
+- New Sync menu in the composer to turn Weave or Rojo on per Studio place
 
 **1.0.21** · Nov 4, 2026
 - Shared chats no longer stay stuck on 'replying' after a reply finishes
@@ -109,17 +118,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 
 **1.0.17** · Nov 2, 2026
 - Fixed chats stopping at once with 'Claude Code exited (0)' when the Claude desktop app is installed
-
-**1.0.16** · Nov 2, 2026
-- Notes: plan your games in Markdown, linked into chats
-- Revert undoes a chat's Studio changes in one step
-- Ship Check before you publish
-- Save Guard checks updates against real player saves
-- Mockup: rebuild a UI picture natively with ui_preview
-- Spend preview shows what a big job usually costs
-- Weave: steadier on big places
-- Sound Lab previews play even when Studio isn't in focus
-- Discord shows Rodex links
-- Projects menu sorted by activity
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
