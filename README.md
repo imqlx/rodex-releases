@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.23)
+## What's new (current version: 1.0.24)
+
+**1.0.24** · Nov 5, 2026
+- The beta notice shows right at start
+- Its Understood button can't stay locked when Windows misreports focus
 
 **1.0.23** · Nov 5, 2026
 - Analytics page opens from chats again
@@ -113,13 +117,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.19** · Nov 3, 2026
 - Shared chats no longer stay stuck on replying after a long reply
 - You can send and stop again in those chats
-
-**1.0.18** · Nov 2, 2026
-- Analytics funnels: /funnels finds the key moments in your game and wires up Roblox analytics funnels
-- Local models retry a tool call that failed instead of guessing the result, and say when the model is still loading
-- Shared chats no longer get stuck when Rodex restarted mid-reply
-- Image tools explain when your ChatGPT plan can't make pictures
-- Experience settings: API key checks fixed
-- Notes: simpler sidebar and menus
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
