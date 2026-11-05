@@ -26,7 +26,7 @@
 | macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 125 MB |
 | macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 130 MB |
 | Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 133 MB |
-| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 103 MB |
+| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 104 MB |
 
 These links always give the newest version. By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
@@ -84,7 +84,11 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.25)
+## What's new (current version: 1.0.26)
+
+**1.0.26** · Nov 5, 2026
+- Update Countdown: clearer page with a big preview, a timeline and one Start button
+- New icons on the Plugins page
 
 **1.0.25** · Nov 5, 2026
 - Analytics page is switched off again for now
@@ -110,11 +114,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 
 **1.0.21** · Nov 4, 2026
 - Shared chats no longer stay stuck on 'replying' after a reply finishes
-
-**1.0.20** · Nov 4, 2026
-- Rodex no longer pauses a reply for spending without changing the game
-- New Weave look and fixes
-- Open sub places
-- Mac progress bar fix
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
