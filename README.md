@@ -84,7 +84,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.24)
+## What's new (current version: 1.0.25)
+
+**1.0.25** · Nov 5, 2026
+- Analytics page is switched off again for now
 
 **1.0.24** · Nov 5, 2026
 - The beta notice shows right at start
@@ -113,9 +116,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - New Weave look and fixes
 - Open sub places
 - Mac progress bar fix
-
-**1.0.19** · Nov 3, 2026
-- Shared chats no longer stay stuck on replying after a long reply
-- You can send and stop again in those chats
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
