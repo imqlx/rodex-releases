@@ -1,0 +1,37 @@
+# Posts every published Rodex release to Discord's #changelog as an embed.
+# Lives in the releases repo as .github/workflows/discord.yml (release.js
+# copies it there with .github/discord-changelog.mjs). Needs the repo secret
+# DISCORD_WEBHOOK (a webhook of #changelog); optional repo variable
+# DISCORD_PING_ROLE (a role id to mention, e.g. Updates).
+name: Discord changelog
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to post again (e.g. v1.0.27)
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Post to Discord
+        env:
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_PING_ROLE: ${{ vars.DISCORD_PING_ROLE }}
+          GH_TOKEN: ${{ github.token }}
+        run: node .github/discord-changelog.mjs
