@@ -84,7 +84,17 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.26)
+## What's new (current version: 1.0.27)
+
+**1.0.27** · Nov 7, 2026
+- Voice typing: click the mic next to Send (or Ctrl+Shift+Space), talk, and your words appear in the box
+- Rodex can watch videos: attach a clip or paste a YouTube, TikTok or Medal link and it looks at the frames and listens to the sound
+- New Claude, ChatGPT and Grok models show up in the model menu by themselves, and Auto picks the newest ones
+- New animation and cutscene skill with pose tables, timing rules and cutscene playback
+- A Discord button in the sidebar takes you to the Rodex server, where new members get 100 free credits
+- A picture sent without text now works in Codex and Cursor chats
+- Passes, Analytics and Update Countdown use the line icons again
+- Security fixes for Blender scripts, Figma, Weave, packages, sound downloads, shared files and updates
 
 **1.0.26** · Nov 5, 2026
 - Update Countdown: clearer page with a big preview, a timeline and one Start button
@@ -111,8 +121,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - New check for UI that doesn't fit phones and tablets
 - Two-player tests only run when they're really needed (Settings → Agent)
 - New Sync menu in the composer to turn Weave or Rojo on per Studio place
-
-**1.0.21** · Nov 4, 2026
-- Shared chats no longer stay stuck on 'replying' after a reply finishes
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
