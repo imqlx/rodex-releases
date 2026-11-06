@@ -76,7 +76,7 @@ jobs:
           echo "$BUNDLE_SHA" | grep -Eq '^[0-9a-f]{64}$' || { echo "bad bundle hash"; exit 1; }
           echo "$LOCK_SHA" | grep -Eq '^[0-9a-f]{64}$' || { echo "bad lock hash"; exit 1; }
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: 22
           architecture: ${{ matrix.node_arch }}
@@ -116,7 +116,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: app
-        run: npm ci --no-audit --no-fund
+        run: npm ci --no-audit --no-fund --ignore-scripts
 
       - name: Build (macOS)
         if: matrix.target == 'mac'
@@ -138,6 +138,7 @@ jobs:
             <key>com.apple.security.cs.allow-jit</key><true/>
             <key>com.apple.security.cs.allow-unsigned-executable-memory</key><true/>
             <key>com.apple.security.automation.apple-events</key><true/>
+            <key>com.apple.security.device.audio-input</key><true/>
           </dict></plist>
           PLIST
             cat > build/signed.js <<'JS'
