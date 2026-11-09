@@ -84,7 +84,17 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.27)
+## What's new (current version: 1.0.28)
+
+**1.0.28** · Nov 10, 2026
+- Claude Fable 5.2, with a New tag on new models
+- Picks up where it left off when your AI plan's limit resets
+- Exploit audit, load test and phone report
+- Live game error inbox, publish diff, patch notes and timed events
+- Gamepad check, live config and save migrations
+- /bug turns a bug video into a test
+- What changed for teams, and a codebase map
+- Chat time-lapse videos
 
 **1.0.27** · Nov 7, 2026
 - Voice typing: click the mic next to Send (or Ctrl+Shift+Space), talk, and your words appear in the box
@@ -112,14 +122,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - Update Countdown
 - beta support
 - fixes
-
-**1.0.22** · Nov 5, 2026
-- Grok is a new AI choice for chats
-- Connect Figma to turn designs into Roblox UI and back
-- Several chats on one place now see each other and test together at the end
-- Script saves get type checks when luau-lsp is installed
-- New check for UI that doesn't fit phones and tablets
-- Two-player tests only run when they're really needed (Settings → Agent)
-- New Sync menu in the composer to turn Weave or Rojo on per Studio place
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
