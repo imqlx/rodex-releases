@@ -84,7 +84,10 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.28)
+## What's new (current version: 1.0.29)
+
+**1.0.29** · Nov 11, 2026
+- Chats keep working when rodexai.dev has trouble checking credits
 
 **1.0.28** · Nov 10, 2026
 - Claude Fable 5.2, with a New tag on new models
@@ -116,11 +119,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.24** · Nov 5, 2026
 - The beta notice shows right at start
 - Its Understood button can't stay locked when Windows misreports focus
-
-**1.0.23** · Nov 5, 2026
-- Analytics page opens from chats again
-- Update Countdown
-- beta support
-- fixes
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
