@@ -22,7 +22,7 @@
 
 | Platform | Download |
 |---|---|
-| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 113 MB |
+| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 110 MB |
 | macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 125 MB |
 | macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 131 MB |
 | Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 133 MB |
@@ -84,7 +84,13 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.30)
+## What's new (current version: 1.0.31)
+
+**1.0.31** · Nov 11, 2026
+- Asset folders: link folders of icons, vectors, models, sounds and fonts from your PC and pick them in chat with {{
+- Settings → Storage shows what Rodex keeps on your PC and clears old screenshots and caches (screenshots older than 30 days go by themselves)
+- Models from Blender are checked for flickering faces (z-fighting) before they're imported
+- Update Countdown: the hourglass and label share one outline, shadow and glow
 
 **1.0.30** · Nov 11, 2026
 - Shared chats no longer stay stuck on 'replying' after a reply finishes when a screenshot upload hangs
@@ -93,7 +99,7 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.29** · Nov 11, 2026
 - Chats keep working when rodexai.dev has trouble checking credits
 
-**1.0.28** · Nov 10, 2026
+**1.0.28** · Nov 9, 2026
 - Claude Fable 5.2, with a New tag on new models
 - Picks up where it left off when your AI plan's limit resets
 - Exploit audit, load test and phone report
@@ -103,7 +109,7 @@ Only the one for your computer, from the table above. The other files on the [Re
 - What changed for teams, and a codebase map
 - Chat time-lapse videos
 
-**1.0.27** · Nov 7, 2026
+**1.0.27** · Nov 6, 2026
 - Voice typing: click the mic next to Send (or Ctrl+Shift+Space), talk, and your words appear in the box
 - Rodex can watch videos: attach a clip or paste a YouTube, TikTok or Medal link and it looks at the frames and listens to the sound
 - New Claude, ChatGPT and Grok models show up in the model menu by themselves, and Auto picks the newest ones
@@ -116,8 +122,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 **1.0.26** · Nov 5, 2026
 - Update Countdown: clearer page with a big preview, a timeline and one Start button
 - New icons on the Plugins page
-
-**1.0.25** · Nov 5, 2026
-- Analytics page is switched off again for now
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
