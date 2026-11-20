@@ -22,11 +22,11 @@
 
 | Platform | Download |
 |---|---|
-| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 110 MB |
-| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 125 MB |
-| macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 131 MB |
-| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 133 MB |
-| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 104 MB |
+| Windows 10 / 11 (64-bit) | [Rodex-Setup.exe](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-Setup.exe) · Installer (.exe) · 144 MB |
+| macOS 12+ · Apple Silicon (M1 and newer) | [Rodex-mac-arm64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-arm64.dmg) · Disk image (.dmg) · 158 MB |
+| macOS 12+ · Intel | [Rodex-mac-x64.dmg](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-mac-x64.dmg) · Disk image (.dmg) · 164 MB |
+| Linux x64 | [Rodex-linux-x86_64.AppImage](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-x86_64.AppImage) · AppImage (any distro) · 165 MB |
+| Linux x64 | [Rodex-linux-amd64.deb](https://github.com/imqlx/rodex-releases/releases/download/setup/Rodex-linux-amd64.deb) · Debian / Ubuntu (.deb) · 137 MB |
 
 These links always give the newest version. By downloading you agree to the [Terms](https://rodexai.dev/terms) and [Privacy Policy](https://rodexai.dev/privacy).
 
@@ -84,7 +84,25 @@ Free to start with 300 credits a month. Monthly plans (Starter, Pro, Max) are on
 
 Only the one for your computer, from the table above. The other files on the [Releases](https://github.com/imqlx/rodex-releases/releases) page (`.update`, `latest.json`, `.lock.json`) are what Rodex downloads by itself when it updates.
 
-## What's new (current version: 1.0.31)
+## What's new (current version: 1.0.33)
+
+**1.0.33** · Nov 18, 2026
+- Skills: 80+ playbooks Rodex now picks on its own, with reference pictures
+- Knowledge vault galaxy browser and Open in Obsidian
+- Your own skill packs from a folder, zip or GitHub link
+- Help improve Rodex (asked once per game, nothing of your game leaves your PC)
+- Knowledge vault downloads on its own, so updates are much smaller
+- Rodex brings its own Python when a skill needs one
+- Buddy fixes: saved position, speech bubble no longer floats alone
+- Fixed overlapping text in questions
+
+**1.0.32** · Nov 15, 2026
+- Custom themes: type /themes to pick an animated or pixel scene, or describe one and your own AI draws it
+- Buddies: type /buddy for a pixel companion on the message box that tells you what Rodex is doing and cheers you on
+- Feedback reaches Discord again
+- Reply length: Settings → Agent lets you pick Short, Normal or Detailed replies
+- the work and testing stay the same
+- Reply length: Settings → Agent → Reply length for shorter or more detailed answers
 
 **1.0.31** · Nov 11, 2026
 - Asset folders: link folders of icons, vectors, models, sounds and fonts from your PC and pick them in chat with {{
@@ -108,19 +126,5 @@ Only the one for your computer, from the table above. The other files on the [Re
 - /bug turns a bug video into a test
 - What changed for teams, and a codebase map
 - Chat time-lapse videos
-
-**1.0.27** · Nov 6, 2026
-- Voice typing: click the mic next to Send (or Ctrl+Shift+Space), talk, and your words appear in the box
-- Rodex can watch videos: attach a clip or paste a YouTube, TikTok or Medal link and it looks at the frames and listens to the sound
-- New Claude, ChatGPT and Grok models show up in the model menu by themselves, and Auto picks the newest ones
-- New animation and cutscene skill with pose tables, timing rules and cutscene playback
-- A Discord button in the sidebar takes you to the Rodex server, where new members get 100 free credits
-- A picture sent without text now works in Codex and Cursor chats
-- Passes, Analytics and Update Countdown use the line icons again
-- Security fixes for Blender scripts, Figma, Weave, packages, sound downloads, shared files and updates
-
-**1.0.26** · Nov 5, 2026
-- Update Countdown: clearer page with a big preview, a timeline and one Start button
-- New icons on the Plugins page
 
 [All versions](https://github.com/imqlx/rodex-releases/releases)
